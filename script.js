@@ -1,8 +1,5 @@
 import pages from "./story.js";
 
-console.log(pages);
-
-let currentPage = 1;
 let img = document.querySelector(".illustration img");
 let story = document.querySelector(".story");
 let optionContainer = document.querySelector(".options");
@@ -29,7 +26,6 @@ function rewriteStory(paragraphs) {
 }
 
 function rewriteOptions(options) {
-  console.log(options);
   optionContainer.innerHTML = "";
   // <button class="option" data-goto="2">otro gato</button>
   options.forEach((option) => {
